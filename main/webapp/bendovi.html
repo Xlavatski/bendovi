@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bendovi</title>
+    <script src="js/jqueri-3.5.1.js"></script>
+    <script src="js/mustache.js"></script>
+    <style>
+        ul li .edit {
+            display: none;
+        }
+
+        ul li.edit .edit{
+            display: initial;
+        }
+        ul li.edit .noedit{
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bend.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <h1>Bendovi</h1>
+    <template id="templ">
+        <li>
+            <p>Bend:</p><strong>{{naziv}}</strong>
+            <br>
+            <button class="delete noedit" data-id="{{id}}"><i class="fa fa-trash"></i></button>
+            <button class="btnEdit noedit"><i class="fa fa-edit"></i> edit</button>
+            <p>
+                <input type="text" class="txtNaziv edit" placeholder="Novi naziv benda">
+                <button data-id="{{id}}" class="save edit"><i class="fa fa-save"></i></button>
+                <button class="cancle edit">Cancle</button>
+            </p>
+        </li>
+    </template>
+    <input id="txtUnos" type="text" placeholder="Unesi bend...">
+    <button id="btnUnesiBend">unesi</button><br><br>
+    <button id="btnUcitaj">učitaj</button>
+    <ul id="lista">
+
+    </ul>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

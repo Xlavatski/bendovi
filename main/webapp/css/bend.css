@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    font-family: Arial;
+}
+
+#lista li {
+    background-color: dimgrey;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#lista li strong {
+    color: white;
+}
+
+.delete {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: red;
+    padding-left: 15px;
+}
+
+.btnEdit {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding-left: 15px;
+    position: relative;
+    top: 2px;
+}
+
+.save {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
